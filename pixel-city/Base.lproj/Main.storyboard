@@ -12,6 +12,7 @@
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
             <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -92,6 +93,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--PopVC-->
+        <scene sceneID="orz-fl-g8a">
+            <objects>
+                <viewController storyboardIdentifier="PopVC" id="y2R-Uj-Qog" customClass="PopVC" customModule="pixel_city" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qcx-f7-X4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B3o-Z3-ZOQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwp-6L-r0w">
+                                <rect key="frame" x="87" y="622" width="200" height="25"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double-tap to dismiss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdz-CJ-qeL">
+                                        <rect key="frame" x="14" y="1" width="172.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Vsh-tB-fz6"/>
+                                    <constraint firstItem="kdz-CJ-qeL" firstAttribute="centerX" secondItem="jwp-6L-r0w" secondAttribute="centerX" id="XR0-qN-AXB"/>
+                                    <constraint firstAttribute="width" constant="200" id="cdQ-qq-1Un"/>
+                                    <constraint firstItem="kdz-CJ-qeL" firstAttribute="centerY" secondItem="jwp-6L-r0w" secondAttribute="centerY" id="cfA-iS-sGk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ln6-ZU-LGx">
+                                <rect key="frame" x="25" y="20" width="300" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="42x-WP-KOC"/>
+                                    <constraint firstAttribute="height" constant="70" id="wpa-vf-rKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUi-z0-k0z">
+                                <rect key="frame" x="25" y="90" width="300" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="zTC-BW-vEv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ln6-ZU-LGx" firstAttribute="leading" secondItem="fSR-nL-TmC" secondAttribute="leading" constant="25" id="IS3-yk-XhF"/>
+                            <constraint firstItem="B3o-Z3-ZOQ" firstAttribute="bottom" secondItem="fSR-nL-TmC" secondAttribute="bottom" id="MQr-Jv-VET"/>
+                            <constraint firstItem="rUi-z0-k0z" firstAttribute="leading" secondItem="fSR-nL-TmC" secondAttribute="leading" constant="25" id="X7w-n7-xj8"/>
+                            <constraint firstItem="fSR-nL-TmC" firstAttribute="bottom" secondItem="jwp-6L-r0w" secondAttribute="bottom" constant="20" id="aW4-Ol-MIP"/>
+                            <constraint firstItem="B3o-Z3-ZOQ" firstAttribute="leading" secondItem="fSR-nL-TmC" secondAttribute="leading" id="cID-Uy-4OC"/>
+                            <constraint firstItem="ln6-ZU-LGx" firstAttribute="top" secondItem="fSR-nL-TmC" secondAttribute="top" id="jdC-w5-OIG"/>
+                            <constraint firstItem="rUi-z0-k0z" firstAttribute="width" secondItem="ln6-ZU-LGx" secondAttribute="width" id="lpj-XO-4tk"/>
+                            <constraint firstItem="jwp-6L-r0w" firstAttribute="centerX" secondItem="Qcx-f7-X4u" secondAttribute="centerX" id="m5X-HJ-g0R"/>
+                            <constraint firstItem="B3o-Z3-ZOQ" firstAttribute="trailing" secondItem="fSR-nL-TmC" secondAttribute="trailing" id="n2K-8Q-R2B"/>
+                            <constraint firstItem="rUi-z0-k0z" firstAttribute="top" secondItem="ln6-ZU-LGx" secondAttribute="bottom" id="ogC-Hw-ubM"/>
+                            <constraint firstItem="B3o-Z3-ZOQ" firstAttribute="top" secondItem="Qcx-f7-X4u" secondAttribute="top" id="qxU-F2-J4T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fSR-nL-TmC"/>
+                    </view>
+                    <connections>
+                        <outlet property="ownerLbl" destination="rUi-z0-k0z" id="iaY-Jz-vj8"/>
+                        <outlet property="popImageView" destination="B3o-Z3-ZOQ" id="pui-sH-f9e"/>
+                        <outlet property="titleLbl" destination="ln6-ZU-LGx" id="hbE-wa-taa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jkl-JZ-dvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="134.48275862068968"/>
         </scene>
     </scenes>
     <resources>
